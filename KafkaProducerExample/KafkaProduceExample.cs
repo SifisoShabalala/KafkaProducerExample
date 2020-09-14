@@ -21,11 +21,11 @@ namespace KafkaProducerExample
             "EVT_GITHUB_COMMITS",
             Protocol = BrokerProtocol.SaslSsl,
             AuthenticationMode = BrokerAuthenticationMode.Plain,
-            Username = "avnadmin",
+            Username = "",
             SslCaLocation = "ca.pem",
             SslCertificateLocation = "service.cert",
             SslKeyLocation = "service.key",
-            Password = "v84gp12ojyz8brnp")] IAsyncCollector<KafkaEventData<string, string>> producer,
+            Password = "")] IAsyncCollector<KafkaEventData<string, string>> producer,
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
